@@ -1,3 +1,71 @@
-.main-section{
-    background-color: transparent;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
+
+.container-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-section {
+    background: #fafafa;
+    box-shadow: #00000059 0 5px 15px;
+    border-radius: 20px;
+    margin: 0 2rem;
+    margin-bottom: 20px;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+}
+
+.right-side {
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.upcoming-quotes-section {
+    display: flex;
+    justify-content: space-around;
+    
+    .card-section {
+        flex: 0 0 auto;
+        width: 270px;
+      }
+
+      .left-side {
+        width: 70%;
+        padding: 5px;
+      }
+
+      .right-side{
+        width: 30%;
+
+        p { font-size: 10px; }
+      }
+  }
+  
