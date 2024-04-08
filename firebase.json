@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "foquotation",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "us-central1"
+      }
+    }
+  ]
+}

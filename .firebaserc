@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "projectcotation": {
+      "hosting": {
+        "foquotation": [
+          "cotationpublic"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "projectcotation"
+  }
+}
