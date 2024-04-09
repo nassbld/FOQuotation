@@ -48,24 +48,3 @@
     padding: 0 2rem;
 }
 
-.upcoming-quotes-section {
-    display: flex;
-    justify-content: space-around;
-    
-    .card-section {
-        flex: 0 0 auto;
-        width: 270px;
-      }
-
-      .left-side {
-        width: 70%;
-        padding: 5px;
-      }
-
-      .right-side{
-        width: 30%;
-
-        p { font-size: 10px; }
-      }
-  }
-  
