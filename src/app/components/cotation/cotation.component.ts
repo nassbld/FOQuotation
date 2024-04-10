@@ -10,6 +10,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { Observable } from 'rxjs';
+import { CotationListComponent } from '../cotation-list/cotation-list.component';
 @Component({
   selector: 'app-cotation',
   standalone: true,
@@ -21,6 +22,7 @@ import { Observable } from 'rxjs';
     MatButtonModule,
     CommonModule,
     FormsModule,
+    CotationListComponent,
   ],
   template: `
     <div class="container-spinner" *ngIf="!quote || quote === null">
@@ -63,34 +65,7 @@ import { Observable } from 'rxjs';
       </mat-card>
       <!-- Section secondaire -->
       <h2>Prochaines estimations</h2>
-      <div class="upcoming-quotes-section">
-        <mat-card
-          *ngFor="let upcomingQuote of upcomingQuotes | slice : 0 : 4"
-          class="card-section"
-        >
-          <div class="main-section">
-            <div class="left-side">
-              <img
-                mat-card-image
-                [src]="upcomingQuote.image"
-                alt="Photo du véhicule"
-              />
-            </div>
-            <div class="right-side">
-              <mat-card-content>
-                <p>
-                  <strong> ID Client : <br /></strong
-                  >{{ upcomingQuote.clientId }}
-                </p>
-                <p>
-                  <strong> Description: <br /></strong
-                  >{{ upcomingQuote.description }}
-                </p></mat-card-content
-              >
-            </div>
-          </div>
-        </mat-card>
-      </div>
+      <app-cotation-list [upcomingQuotes]="upcomingQuotes"></app-cotation-list>
     </div>
   `,
   styleUrl: './cotation.component.scss',
