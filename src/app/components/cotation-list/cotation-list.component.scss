@@ -6,13 +6,19 @@
     margin-bottom: 20px;
 }
 
+.main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .left-side {
-    width: 50%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 5px;
 
     img {
         width: 100%;
@@ -23,10 +29,11 @@
 }
 
 .right-side {
-    width: 50%;
+    width: 100%;
     align-items: center;
     flex-direction: column;
     padding: 0 2rem;
+    p { font-size: 10px; }
 }
 
 .upcoming-quotes-section {
@@ -36,16 +43,5 @@
     .card-section {
         flex: 0 0 auto;
         width: 270px;
-      }
-
-      .left-side {
-        width: 70%;
-        padding: 5px;
-      }
-
-      .right-side{
-        width: 30%;
-
-        p { font-size: 10px; }
       }
   }
