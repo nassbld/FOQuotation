@@ -8,13 +8,13 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCU4f-bUE5sM8OjVb3hTBsboJm6K_WVdho',
-  authDomain: 'projectcotation.firebaseapp.com',
-  projectId: 'projectcotation',
-  storageBucket: 'projectcotation.appspot.com',
-  messagingSenderId: '518544517886',
-  appId: '1:518544517886:web:999d78b232c71d471553af',
-  measurementId: 'G-PJRYQWVZ15',
+  apiKey: "AIzaSyCU4f-bUE5sM8OjVb3hTBsboJm6K_WVdho",
+  authDomain: "projectcotation.firebaseapp.com",
+  projectId: "projectcotation",
+  storageBucket: "projectcotation.appspot.com",
+  messagingSenderId: "518544517886",
+  appId: "1:518544517886:web:ac2ed74dae9e4c9e1553af",
+  measurementId: "G-1DG78K6G49"
 };
 
 export const appConfig: ApplicationConfig = {

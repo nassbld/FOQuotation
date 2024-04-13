@@ -10,7 +10,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { Observable } from 'rxjs';
-import {CotationListComponent} from "../cotation-list/cotation-list.component";
+import { CotationListComponent } from '../cotation-list/cotation-list.component';
 @Component({
   selector: 'app-cotation',
   standalone: true,
@@ -83,7 +83,6 @@ export class CotationComponent implements OnInit {
 
   ngOnInit() {
     this.quoteId = this.route.snapshot.paramMap.get('quoteId')!;
-    console.log(this.quoteId)
     this.service.getQuote().subscribe((quote: any) => {
       this.quote = quote.find((quote: any) => quote.quoteId === this.quoteId);
     });
